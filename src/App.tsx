@@ -1,4 +1,4 @@
-//import { useState } from "react";
+import { useState } from "react";
 import "./App.css";
 import accent1 from "./assets/1.png";
 import accent2 from "./assets/2.png";
@@ -16,9 +16,11 @@ import logo4 from "./assets/logo4.png";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
 function App() {
-  //const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0);
 
-  function handlePause() {}
+  function handleClick() {
+    setCount(count + 1);
+  }
 
   return (
     <div id="container">
@@ -146,6 +148,8 @@ function App() {
           </a>
         </div>
       </div>
+
+      <button onClick={handleClick}></button>
     </div>
   );
 }
