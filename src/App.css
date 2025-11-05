@@ -479,7 +479,7 @@ a {
     width: 100%;
     position: static;
     margin-left: 0px;
-    margin-top: 0px;
+    margin-top: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -499,31 +499,31 @@ a {
   .accents {
     width: 70%;
     animation: spin 60s infinite linear;
-    padding-bottom: 400px;
+    padding-bottom: 500px;
   }
   .img1 {
     position: absolute;
-    top: 60px;
-    left: 30px;
-    width: 100px;
+    top: 100px;
+    left: 70px;
+    width: 50px;
   }
   .img2 {
     position: absolute;
     top: 50px;
-    right: 40px;
-    width: 150px;
+    right: 70px;
+    width: 75px;
   }
   .img3 {
     position: absolute;
     top: 200px;
     right: 145px;
-    width: 180px;
+    width: 90px;
   }
   .img4 {
     position: absolute;
     top: 200px;
     right: 10px;
-    width: 110px;
+    width: 75px;
   }
 
   #page6 {
@@ -595,7 +595,7 @@ a {
   }
 
   #page7a .description {
-    width: 120%;
+    width: 140%;
     font-size: 55px;
   }
 
