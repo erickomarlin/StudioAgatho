@@ -180,7 +180,6 @@
   width: 100%;
 }
 
-/* Add some content at the bottom of the video/page */
 .content {
   position: absolute;
   top: 2800px;
@@ -348,7 +347,7 @@
 }
 
 #page7a .description {
-  width: 50%;
+  width: 80%;
   height: 50px;
   color: black;
   border-radius: 5px;
@@ -388,4 +387,244 @@ a:hover {
 a {
   text-decoration: none;
   color: linen;
+}
+
+@media only screen and (max-width: 576px) {
+  #root {
+    max-width: 576px;
+  }
+  #accent1 {
+    width: 100px;
+    top: 350px;
+    left: 140px;
+  }
+  #accent2 {
+    width: 100px;
+    top: 220px;
+    left: 230px;
+  }
+  #accent3 {
+    width: 100px;
+    top: 440px;
+    left: 300px;
+  }
+  .brand-name {
+    transform: scale(0.7);
+  }
+  .description {
+    transform: scale(0.7);
+    width: 100%;
+  }
+  .explore {
+    transform: scale(0.7);
+  }
+
+  #page2 h2 {
+    font-size: 2.1rem;
+  }
+  #page2 .cards {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+  }
+  #page2 .img-card-left {
+    width: 70%;
+  }
+  #page2 .img-card-right {
+    width: 70%;
+  }
+  .img-name {
+    font-size: 1.1rem;
+  }
+  .img-sector {
+    font-size: 1.1rem;
+  }
+
+  #page3 {
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  #page3 .img-card-left {
+    width: 40%;
+  }
+  #page3 .img-card-middle {
+    width: 40%;
+  }
+  #page3 .img-card-right {
+    width: 40%;
+  }
+
+  #myVideo {
+    position: static;
+  }
+  .content {
+    position: absolute;
+    top: 2850px;
+    bottom: 0;
+    height: 60px;
+  }
+  #core {
+    transform: scale(0.7);
+    margin-left: -90px;
+    margin-top: -10px;
+  }
+  .teamwork {
+    transform: scale(0.7);
+    margin-left: -90px;
+    margin-top: -45px;
+  }
+
+  #page5 {
+    width: 100%;
+    position: static;
+    margin-left: 0px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .established {
+    padding: 20px 50px 0px 50px;
+  }
+  .est {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .est-content {
+    font-family: Handwritten;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .accents {
+    width: 70%;
+    animation: spin 60s infinite linear;
+    padding-bottom: 400px;
+  }
+  .img1 {
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    width: 100px;
+  }
+  .img2 {
+    position: absolute;
+    top: 50px;
+    right: 40px;
+    width: 150px;
+  }
+  .img3 {
+    position: absolute;
+    top: 200px;
+    right: 145px;
+    width: 180px;
+  }
+  .img4 {
+    position: absolute;
+    top: 200px;
+    right: 10px;
+    width: 110px;
+  }
+
+  #page6 {
+    margin-top: 20px;
+  }
+
+  .clients {
+    padding-top: 30px;
+    font-size: 3.5rem;
+  }
+
+  .clients-name {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 1fr;
+    gap: 0px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 1.6rem;
+  }
+
+  .serrineton {
+    animation: scrolling-animation 20s linear infinite;
+    animation-delay: 2s;
+  }
+  .crowd {
+    animation: scrolling-animation 20s linear infinite;
+    animation-delay: 8s;
+  }
+  .diamanda {
+    animation: scrolling-animation 20s linear infinite;
+    animation-delay: 4s;
+  }
+
+  .oddnest {
+    animation: scrolling-animation 20s linear infinite;
+    animation-delay: 0s;
+  }
+
+  .spoon-cup {
+    animation: scrolling-animation 20s linear infinite;
+    animation-delay: 10s;
+  }
+
+  .warrenshire {
+    animation: scrolling-animation 20s linear infinite;
+    animation-delay: 4s;
+  }
+
+  @keyframes scrolling-animation {
+    0% {
+      transform: translateX(100%); /* Mulai dari kanan */
+    }
+    100% {
+      transform: translateX(-100%); /* Bergerak hingga ke kiri sepenuhnya */
+    }
+  }
+
+  #page7a {
+    height: 300px;
+  }
+
+  #page7a .brand-name {
+    width: 210px;
+    height: 35px;
+    border-radius: 20px;
+    font-size: 1.4rem;
+    margin-top: 50px;
+  }
+
+  #page7a .description {
+    width: 120%;
+    font-size: 55px;
+  }
+
+  #page7a .email {
+    width: 175px;
+    height: 21px;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: black;
+    font-size: 0.8rem;
+  }
+
+  .email:hover {
+    font-size: 1.1rem;
+    box-shadow: 0px 0px 15px var(--color15);
+  }
+
+  #page7b {
+    margin-top: 100px;
+    margin-bottom: 180px;
+    font-size: 1.4rem;
+  }
+
+  a:hover {
+    color: var(--color15);
+  }
+
+  a {
+    text-decoration: none;
+    color: linen;
+  }
 }
